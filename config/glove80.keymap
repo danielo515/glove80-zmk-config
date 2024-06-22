@@ -293,7 +293,7 @@
 
         spa_tild {
             bindings = <&kp RA(E)>;
-            key-positions = <41 30>;
+            key-positions = <37 38>;
         };
 
         enie {
@@ -318,6 +318,11 @@
         alt_control {
             bindings = <&sk LA(LEFT_CONTROL)>;
             key-positions = <25 26>;
+        };
+
+        equal {
+            bindings = <&kp RA(EQUAL)>;
+            key-positions = <41 30>;
         };
     };
 
@@ -369,12 +374,12 @@
 
         layer_Symbols {
             bindings = <
-&trans  &trans  &trans  &trans            &trans                                                                                    &trans       &trans             &trans    &trans       &trans
-&trans  &trans  &trans  &trans            &trans      &kp PERCENT                                                  &trans           &trans       &trans             &trans    &trans       &trans
-&trans  &trans  &trans  &kp GREATER_THAN  &kp EQUAL   &trans                                                       &kp CARET        &eq_colon    &eq_not            &kp PLUS  &kp PERCENT  &trans
-&trans  &trans  &none   &kp LESS_THAN     &fat_arrow  &trans                                                       &kp LS(AMPS)     &kp LBKT     &kp RBKT           &kp BSLH  &kp PIPE     &kp SQT
-&trans  &trans  &trans  &code_fence       &lt_eq      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &kp EXCLAMATION  &arrow_left  &arrow_right       &trans    &trans       &trans
-&trans  &trans  &trans  &trans            &trans                   &trans  &trans  &trans  &trans  &trans  &trans                   &kp HASH     &kp DOUBLE_QUOTES  &trans    &trans       &trans
+&trans  &trans  &trans  &trans         &trans                                                                                    &trans       &trans             &trans    &trans       &trans
+&trans  &trans  &trans  &trans         &trans      &kp PERCENT                                                  &trans           &trans       &trans             &trans    &trans       &trans
+&trans  &trans  &trans  &kp LESS_THAN  &kp EQUAL   &trans                                                       &kp CARET        &eq_colon    &eq_not            &kp PLUS  &kp PERCENT  &trans
+&trans  &trans  &none   &kp GT         &fat_arrow  &trans                                                       &kp LS(AMPS)     &kp LBKT     &kp RBKT           &kp BSLH  &kp PIPE     &kp SQT
+&trans  &trans  &trans  &code_fence    &lt_eq      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &kp EXCLAMATION  &arrow_left  &arrow_right       &trans    &trans       &trans
+&trans  &trans  &trans  &trans         &trans                   &trans  &trans  &trans  &trans  &trans  &trans                   &kp HASH     &kp DOUBLE_QUOTES  &trans    &trans       &trans
             >;
         };
 
