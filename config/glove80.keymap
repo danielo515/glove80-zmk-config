@@ -365,12 +365,12 @@
 
         alt_tab {
             bindings = <
-&kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI                                                                                       &kt LGUI  &kt LGUI   &kt LGUI   &kt LGUI  &kt LGUI
-&kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI                                                              &kt LGUI       &kt LGUI  &kt LGUI   &kt LGUI   &kt LGUI  &kt LGUI
-&kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI                                                              &kt LGUI       &kt LGUI  &kt LGUI   &kt LGUI   &kt LGUI  &kt LGUI
-&kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI                                                              &kp LEFT       &kp LEFT  &kp RIGHT  &kp RIGHT  &kt LGUI  &kt LGUI
-&kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kp TAB   &alt_tab_exit  &kt LGUI  &kt LGUI   &kt LGUI   &kt LGUI  &kt LGUI
-&kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI            &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI  &kt LGUI                 &kt LGUI  &kt LGUI   &kt LGUI   &kt LGUI  &kt LGUI
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                       &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                              &alt_tab_exit       &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                              &alt_tab_exit       &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                              &kp LEFT       &kp LEFT  &kp RIGHT  &kp RIGHT  &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &kp TAB   &alt_tab_exit  &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit            &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                 &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
             >;
         };
     };
