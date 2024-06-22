@@ -154,6 +154,13 @@
             bindings = <&kt LGUI &tog 5>;
             label = "ALT_TAB_EXIT";
         };
+
+        code_fence: code_fence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
+            label = "CODE_FENCE";
+        };
     };
 
     combos {
@@ -293,6 +300,20 @@
             bindings = <&enie_macro>;
             key-positions = <58 40>;
         };
+
+        l_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <41 40>;
+            timeout-ms = <COMBO_TIMEOUT_MS>;
+            layers = <0>;
+        };
+
+        r_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <28 29>;
+            timeout-ms = <COMBO_TIMEOUT_MS>;
+            layers = <0>;
+        };
     };
 
     /* Automatically generated keymap */
@@ -343,12 +364,12 @@
 
         layer_Symbols {
             bindings = <
-&trans  &trans  &trans  &trans      &trans                                                                           &trans       &trans        &trans    &trans       &trans
-&trans  &trans  &trans  &trans      &trans  &trans                                                  &trans           &trans       &trans        &trans    &trans       &trans
-&trans  &trans  &trans  &trans      &trans  &trans                                                  &kp CARET        &eq_colon    &eq_not       &kp PLUS  &kp PERCENT  &trans
-&trans  &trans  &none   &fat_arrow  &trans  &trans                                                  &kp LS(AMPS)     &kp LBKT     &kp RBKT      &kp BSLH  &kp PIPE     &kp SQT
-&trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EXCLAMATION  &arrow_left  &arrow_right  &trans    &trans       &trans
-&trans  &trans  &trans  &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans                   &trans       &trans        &trans    &trans       &trans
+&trans  &trans  &trans  &trans       &trans                                                                           &trans       &trans             &trans    &trans       &trans
+&trans  &trans  &trans  &trans       &trans  &trans                                                  &trans           &trans       &trans             &trans    &trans       &trans
+&trans  &trans  &trans  &kp EQUAL    &trans  &trans                                                  &kp CARET        &eq_colon    &eq_not            &kp PLUS  &kp PERCENT  &trans
+&trans  &trans  &none   &fat_arrow   &trans  &trans                                                  &kp LS(AMPS)     &kp LBKT     &kp RBKT           &kp BSLH  &kp PIPE     &kp SQT
+&trans  &trans  &trans  &code_fence  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EXCLAMATION  &arrow_left  &arrow_right       &trans    &trans       &trans
+&trans  &trans  &trans  &trans       &trans          &trans  &trans  &trans  &trans  &trans  &trans                   &kp HASH     &kp DOUBLE_QUOTES  &trans    &trans       &trans
             >;
         };
 
@@ -365,12 +386,12 @@
 
         alt_tab {
             bindings = <
-&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                       &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
-&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                              &alt_tab_exit       &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
-&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                              &alt_tab_exit       &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
-&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                              &kp LEFT       &kp LEFT  &kp RIGHT  &kp RIGHT  &alt_tab_exit  &alt_tab_exit
-&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &kp TAB   &alt_tab_exit  &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
-&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit            &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                 &alt_tab_exit  &alt_tab_exit   &alt_tab_exit   &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                                                          &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                            &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                            &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                            &kp LEFT       &kp LEFT       &kp RIGHT      &kp RIGHT      &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &kp TAB        &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
             >;
         };
     };
