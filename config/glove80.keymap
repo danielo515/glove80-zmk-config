@@ -185,13 +185,6 @@
             timeout-ms = <COMBO_TIMEOUT_MS>;
         };
 
-        combo_equals {
-            bindings = <&kp EQUAL>;
-            key-positions = <41 30>;
-            layers = <0>;
-            timeout-ms = <COMBO_TIMEOUT_MS>;
-        };
-
         combo_rparen {
             bindings = <&kp RPAR>;
             key-positions = <42 43>;
@@ -293,7 +286,7 @@
 
         spa_tild {
             bindings = <&kp RA(E)>;
-            key-positions = <58 41>;
+            key-positions = <41 30>;
         };
 
         enie {
@@ -313,6 +306,11 @@
             key-positions = <28 29>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             layers = <0>;
+        };
+
+        alt_control {
+            bindings = <&sk LA(LEFT_CONTROL)>;
+            key-positions = <25 26>;
         };
     };
 
