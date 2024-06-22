@@ -176,15 +176,6 @@
         // Combo positions defined here:
         // https://github.com/moergo-sc/zmk/blob/main/app/boards/arm/glove80/glove80.dtsi#L24-L29
 
-        combo_esc {
-            // Left hand, home row middle + index -> escape
-
-            bindings = <&kp ESC>;
-            key-positions = <37 38>;
-            layers = <0>;
-            timeout-ms = <COMBO_TIMEOUT_MS>;
-        };
-
         combo_double_quote {
             bindings = <&kp LS(SQT)>;
             key-positions = <36 38>;
@@ -321,7 +312,7 @@
         };
 
         equal {
-            bindings = <&kp RA(EQUAL)>;
+            bindings = <&kp EQUAL>;
             key-positions = <41 30>;
         };
     };
