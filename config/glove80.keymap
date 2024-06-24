@@ -230,8 +230,8 @@
         };
 
         combo_cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <47 49>;
+            bindings = <&kp LG(X)>;
+            key-positions = <50 48>;
             layers = <0>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
         };
@@ -323,6 +323,11 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <41 30>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <30 31>;
         };
     };
 
