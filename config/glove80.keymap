@@ -177,6 +177,13 @@
             bindings = <&kp PLUS &kp EQUAL>;
             label = "PLUS_EQ";
         };
+
+        close_tag: close_tag {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp GT>;
+            label = "CLOSE_TAG";
+        };
     };
 
     combos {
@@ -382,7 +389,7 @@
 &trans  &trans  &trans  &trans         &trans                                                                                    &trans       &trans        &trans    &trans       &trans
 &trans  &trans  &trans  &trans         &trans      &kp PERCENT                                                  &trans           &trans       &trans        &trans    &trans       &trans
 &trans  &trans  &trans  &kp LESS_THAN  &plus_eq    &trans                                                       &kp CARET        &eq_colon    &eq_not       &kp PLUS  &kp PERCENT  &trans
-&trans  &trans  &none   &kp GT         &fat_arrow  &trans                                                       &kp LS(AMPS)     &kp LBKT     &kp RBKT      &kp BSLH  &kp PIPE     &kp SQT
+&trans  &trans  &none   &kp GT         &fat_arrow  &close_tag                                                   &kp LS(AMPS)     &kp LBKT     &kp RBKT      &kp BSLH  &kp PIPE     &kp SQT
 &trans  &trans  &trans  &code_fence    &lt_eq      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &kp EXCLAMATION  &arrow_left  &arrow_right  &trans    &trans       &trans
 &trans  &trans  &trans  &trans         &trans                   &trans  &trans  &trans  &trans  &trans  &trans                   &kp HASH     &kp TILDE     &trans    &trans       &trans
             >;
