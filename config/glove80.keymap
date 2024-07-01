@@ -400,7 +400,7 @@
 &none  &none  &none  &none  &none                                                                         &none         &none          &none      &none  &none
 &none  &none  &none  &none  &none  &none                                                        &none     &none         &none          &none      &none  &none
 &none  &none  &none  &none  &none  &none                                                        &none     &none         &none          &none      &none  &none
-&none  &none  &none  &none  &none  &none                                                        &kp LEFT  &kp UP        &kp DOWN       &kp RIGHT  &none  &none
+&none  &none  &none  &none  &none  &none                                                        &kp LEFT  &kp DOWN      &kp UP_ARROW   &kp RIGHT  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp C_VOLUME_UP    &none  &none  &kp F5    &kp F2        &kp F12        &kp F19    &none  &none
 &none  &none  &none  &none  &none         &none  &none  &none  &kp C_VOLUME_DOWN  &none  &none            &kp LC(LEFT)  &kp LC(RIGHT)  &none      &none  &none
             >;
@@ -410,7 +410,7 @@
             bindings = <
 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                                                          &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                            &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
-&alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                            &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
+&alt_tab_exit  &kp Q          &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                            &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                                                                                            &kp LEFT       &kp LEFT       &kp RIGHT      &kp RIGHT      &alt_tab_exit  &alt_tab_exit
 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &kp TAB        &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit                 &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit  &alt_tab_exit
